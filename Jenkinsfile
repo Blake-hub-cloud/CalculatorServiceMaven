@@ -5,21 +5,21 @@ pipeline {
             steps {
                 git 'https://github.com/Blake-hub-cloud/CalculatorServiceMaven.git'
                 withMaven(maven : 'maven_3_6_0')
-                sh 'mvn deploy'
+                bat 'mvn deploy'
             }
         }
         stage('Test') {
             steps {
                 git 'https://github.com/Blake-hub-cloud/CalculatorServiceMaven.git'
                 withMaven(maven : 'maven_3_6_0')
-                sh 'mvn deploy'
+                bat 'mvn deploy'
             }
         }
         stage('Deploy') {
             steps {
                 git 'https://github.com/Blake-hub-cloud/CalculatorServiceMaven.git'
                 withMaven(maven : 'maven_3_6_0')
-                sh 'mvn deploy'
+                bat 'mvn deploy'
             }
         }
     }
